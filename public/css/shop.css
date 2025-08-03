@@ -1,0 +1,136 @@
+/** everything under the header */
+main
+{
+    display: flex;
+    height: 100%;
+}
+
+/* left side: image */
+section
+{
+    background: var(--theme-gray);
+    /* center vertically */
+    align-items: center;
+    display: flex;
+    float: left;
+    height: 100%;
+    /* center horizontally */
+    justify-content: center;
+    overflow: hidden;
+    /* user-select: none; */
+    width: 50%;
+}
+
+img
+{
+    /* background: lightcoral; */
+    /** maintain aspect ratio */
+    aspect-ratio: 1 / 1;
+    /** shrink to fit any box */
+    object-fit: contain;
+    /** clicks pass through images */
+    pointer-events: none;
+    /** allow image stacking */
+    position: fixed;
+    max-width: 80%;
+    height: 80%;
+}
+
+#hatsImg, #shirtsImg, #pantsImg
+{
+    z-index: 1;
+}
+
+/** display item information for buy/equipping */
+#buyFigure
+{
+    position: absolute;
+    bottom: 5%;
+
+    /* background: orange; */
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    z-index: 2;
+}
+
+#buyP
+{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/** buy/equip button */
+#buyButton
+{
+    background: var(--theme-green);
+    border: 0;
+    color: var(--theme-white);
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    z-index: 2;
+}
+
+/** when button is disabled */
+#buyButton:disabled
+{
+    background: var(--theme-red);
+    cursor: not-allowed;
+}
+
+/* right side */
+aside
+{
+    background: var(--theme-gray);
+    display: flex;
+    flex-direction: column;
+    float: right;
+    gap: 1rem;
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+}
+
+/* carousels */
+aside > figure
+{
+    /* background:lightblue; */
+    display: flex;
+    gap: 1rem;
+    height: 25%;
+    /** horizontal scroll but no vertical */
+    overflow: scroll hidden;
+}
+
+/* item */
+aside > figure > article
+{
+    aspect-ratio: 1 / 1;
+    background: var(--theme-darkgray);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/** item name */
+aside > figure > article > h2
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.owned
+{
+    background: var(--theme-red);
+}
+
+.selected
+{
+    background: var(--theme-blue);
+}
+
+.equipped
+{
+    background: var(--theme-yellow);
+}

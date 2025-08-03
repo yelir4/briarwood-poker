@@ -1,0 +1,59 @@
+/*
+ * login.css
+ * used in: login.html, signup.html
+ */
+
+/** prevent from spanning whole viewport (?) */
+body
+{
+height: 100%;
+}
+
+#errorP
+{
+    color: red;
+}
+
+form
+{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+form *
+{
+    /* background: red; */
+    margin: auto;
+    width: 50%;
+}
+
+figure
+{
+    display: flex;
+    flex-direction: column;
+}
+
+button
+{
+    color: #eee;
+    border: 0;
+    padding: 1rem;
+    width: 25%;
+}
+
+#loginBtn
+{
+    background: #54af54;
+}
+#signupBtn
+{
+    background: #5454af;
+}
+
+#statusFigure
+{
+    padding: 1rem 0;
+}

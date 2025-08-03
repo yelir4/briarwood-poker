@@ -1,0 +1,126 @@
+/** custom colors */
+:root
+{
+    --theme-black: #121212;
+    --theme-blue: #5454af;
+    --theme-darkgray: #555;
+    --theme-gray: #999;
+    --theme-green: #54af54;
+    --theme-red: #af5454;
+    --theme-white: #eee;
+    --theme-yellow: #bfbf54;
+}
+
+/** universal box-sizing */
+*, *::before, *::after
+{
+    /* include padding & borders in element width/height */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+/** html: no scrollbars */
+html
+{
+    overflow: hidden;
+}
+
+body
+{
+    background: var(--theme-white);
+    color: var(--theme-black);
+    display: flex;
+    flex-direction: column;
+    font-family: system-ui, sans-serif;
+    font-size: 1rem;
+    /** full viewport */
+    height: 100vh;
+    line-height: 1;
+    text-align: center;
+}
+
+header
+{
+    /* display: none; */
+    background: var(--theme-black);
+    color: var(--theme-white);
+    padding: 0.5rem 0;
+    width: 100%;
+    /* prevent users from selecting text */
+    user-select: none;
+}
+
+nav
+{
+    /* background: blue; */
+    display: flex;
+    gap: 0.5rem;
+    position: absolute;
+    /* top: 1rem; */
+    right: 0;
+    margin: 0;
+    /* padding: 1rem; */
+    z-index: 2;
+}
+
+nav > a
+{
+    /* background: var(--theme-darkgray); */
+    color: var(--theme-white);
+    cursor: pointer;
+    padding: 1rem;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav > a:hover
+{
+    background: var(--theme-darkgray);
+}
+
+
+#userFigure
+{
+    /* background: red; */
+    align-items: end;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    gap: 0.2rem;
+    padding: 0.5rem;
+    position: absolute;
+    right: 0;
+    /* prevent users from selecting text */
+    user-select: none;
+}
+
+#userFigure > a
+{
+    background: var(--theme-green);
+    color: var(--theme-white);
+    font-size: 1rem;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+mark
+{
+    background: none;
+    font-weight: bold;
+}
+
+body > p
+{
+    margin: auto;
+    padding: 1rem 0;
+    width: 50%;
+}
+
+/** image rendering: don't want browser to interpolate the image (64x64) */
+img
+{
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}

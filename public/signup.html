@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Gold Mine: Signup</title>
+    <meta charset="utf-8">
+
+    <!-- link to css -->
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <script defer src="/js/signup.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Gold Mine</h1>
+    </header>
+
+    <p>Welcome to Gold Mine! In this game you can create an avatar, play a minigame to earn gold, and buy items from the shop to customize your avatar!</p>
+
+    <!-- form invokes function that sends POST request -->
+    <form id="signupForm">
+        <figure>
+            <label for="username">Username</label>
+            <input id="username" name="username" required>
+        </figure>
+
+        <figure>
+            <label>Password</label>
+            <input id="password" name="password" type="password" required>
+        </figure>
+
+        <button type="submit" id="signupBtn">Signup</button>
+    </form>
+    <a id="redirect" href="/login">Already have an account? Login here</a>
+
+    <figure id="statusFigure"></figure>
+</body>
+</html>
