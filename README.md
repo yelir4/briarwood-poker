@@ -42,3 +42,13 @@ Make sure to be in project directory, then
 ## list of technologies used
 - Node.js, Express, Sqlite3
 - HTML, CSS, JavaScript
+
+## dependencies
+bcrypt 5.1.1
+- encrypt passwords
+better-sqlite3 11.6.0
+- database
+express
+- handle routing
+express-session
+- maintain user authentication

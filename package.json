@@ -1,7 +1,7 @@
 {
-  "name": "o107_finalproject",
+  "name": "briarwood poker",
   "version": "1.0.0",
-  "description": "shopping website for o107",
+  "description": "full-stack poker project",
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
@@ -11,7 +11,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yelir4/o107_finalproject.git"
+    "url": "https://github.com/yelir4/briarwood-poker.git"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
