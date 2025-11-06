@@ -46,11 +46,11 @@ Make sure to be in project directory, then
 ## dependencies
 bcrypt 5.1.1
 - encrypt passwords
-- 
+
 better-sqlite3 11.6.0
 - database
-express
 
+express
 - handle routing
 
 express-session
